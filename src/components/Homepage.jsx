@@ -15,18 +15,15 @@ const Homepage = () => {
         const response = await fetch(
             `https://akabab.github.io/superhero-api/api/all.json`
         ).then(response => response.json());
-        console.log(response);
         setHeroesList(response);
         return response;
     };
 
     //fetch method for superhero by id
     const fetchSuperheroById = async (id) => {
-        console.log(id)
         const response = await fetch(
             `https://akabab.github.io/superhero-api/api/id/${id}.json`
         ).then(response => response.json());
-        console.log('Response from single', response);
         setHero(response)
         return response;
     }
@@ -46,7 +43,6 @@ const Homepage = () => {
     //method to handle dropdown menu submit, call to single superhero fetch
     const handleSearch = (event) => {
         event.preventDefault();
-        console.log(search.search)
         fetchSuperheroById(search.search)
     }
 

@@ -1,38 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+html {
+  background-image: url('./Images/justiceleague.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#title{
+  color: yellow;
+  font-family: 'Notable';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#welcomeBackground {
+  background: url('https://wallpapercave.com/wp/fID3YiP.jpg');
+  margin-top: 45px;
+  width: 850px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: black;
+  border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#welcome {
+  width: 400px;
+  height: 200px;
+  padding-top: 50px;
+  background-color: rgb(172, 157, 125);
+  border: solid;
+  border-color: black;
+  border-radius: 15px;
+}
+
+
+#content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* card styling */
+#card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  border: solid;
+  border-color: black;
+  width: 850px;
+  margin-top: 15px;
+  background: rgb(172, 157, 125);
+  border-radius: 15px;
+}
+
+#detailContainer {
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 300px
 }
 
-.App-link {
-  color: #61dafb;
+#cardDetails {
+  background-color: white;
+  border-radius: 5%;
+  border: solid;
+  box-shadow: 5px 10px;
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#cardAttributes {
+  background-color: white;
+  border-radius: 5%;
+  border: solid;
+  box-shadow: 5px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#cardStats {
+  background-color: white;
+  border-radius: 5%;
+  margin-bottom: 15px;
+  border: solid;
+  box-shadow: 5px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#cardImage {
+  border-radius: 15px 0px 0px 15px;
+}
+
+
+/* mobile responsiveness */
+@media (max-width:900px) {
+  #welcomeBackground {
+    width: 480px;
   }
-  to {
-    transform: rotate(360deg);
+  #welcome {
+    width: 320px;
+    height: 150px;
+  }
+
+  #card {
+    width: 480px;
+    flex-direction: column-reverse;
+    border-radius: 15px;
+  }
+
+  #detailContainer {
+    align-self: center;
+    margin-left: 0px;
+  }
+
+  #cardImage {
+    border-radius: 15px 15px 0px 0px;
+  }
+}
+
+@media (max-width:600px) {
+  #welcomeBackground {
+    width: 380px;
+  }
+  #content {
+    font-size: 14px;
+  }
+  #card {
+    width: 350px;
+    flex-direction: column-reverse;
+    border-radius: 15px;
+  }
+
+  #cardImage {
+    width: 350px;
+    border-radius: 15px 15px 0px 0px;
   }
 }

@@ -50,7 +50,7 @@ const SuperheroCard = ({ hero }) => {
                     </div>
                 </div>
                 <div>
-                    <img id="cardImage" src={hero.images.lg}></img>
+                    <img id="cardImage" alt={hero.name} src={hero.images.lg}></img>
                 </div>
             </div>
         </>

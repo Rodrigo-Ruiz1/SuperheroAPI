@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Rodrigo-Ruiz1/SuperheroAPI/static/css/main.6bf2fe0b.css",
+    "main.js": "/Rodrigo-Ruiz1/SuperheroAPI/static/js/main.58c539c1.js",
+    "static/js/787.ad444619.chunk.js": "/Rodrigo-Ruiz1/SuperheroAPI/static/js/787.ad444619.chunk.js",
+    "static/media/comics.jpg": "/Rodrigo-Ruiz1/SuperheroAPI/static/media/comics.6f49bc811928124bc43b.jpg",
+    "static/media/justiceleague.jpg": "/Rodrigo-Ruiz1/SuperheroAPI/static/media/justiceleague.5e6388b7e39ea34c8cf7.jpg",
+    "index.html": "/Rodrigo-Ruiz1/SuperheroAPI/index.html",
+    "main.6bf2fe0b.css.map": "/Rodrigo-Ruiz1/SuperheroAPI/static/css/main.6bf2fe0b.css.map",
+    "main.58c539c1.js.map": "/Rodrigo-Ruiz1/SuperheroAPI/static/js/main.58c539c1.js.map",
+    "787.ad444619.chunk.js.map": "/Rodrigo-Ruiz1/SuperheroAPI/static/js/787.ad444619.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bf2fe0b.css",
+    "static/js/main.58c539c1.js"
+  ]
+}
